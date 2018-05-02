@@ -3,7 +3,7 @@ echo "欢迎使用网页雷达一键脚本"
 echo "即将搭建的是尧的4.2版本"
 echo "请输入你的内网ip" 
 read -p "内网ip： " ip
-cp /root/leida/restart.sh /root/restart.sh
+cp /root/WebMap-For-Gaydar/restart.sh /root/restart.sh
 chmod +x restart.sh
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh
@@ -26,8 +26,8 @@ cd libpcap-1.8.1
 make
 make install
 
-git clone https://github.com/gitxiaoxin/leida.git
-cd leida/
+git clone https://github.com/gitxiaoxin/WebMap-For-Gaydar.git
+cd WebMap-For-Gaydar/
 npm i
 npm i -g pino
 npm install -g forever
